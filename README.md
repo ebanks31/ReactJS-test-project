@@ -11,3 +11,5 @@ This project will contain my own home page that will have the following below:
 
 I am learning to put HTML sections, such as navigation bar, header, body content, footer 
 , into different components and having ReactJS renders these components to valid HTML.
+
+So far, this project contains the initial parts for this project.
