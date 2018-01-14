@@ -1,0 +1,10 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: blue;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
