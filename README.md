@@ -1,4 +1,4 @@
-**ReactJS test project*
+**ReactJS test project**
 
 I am creating a test project to learn ReactJS.
 This project will contain my own home page that will have the following below:
