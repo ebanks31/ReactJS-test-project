@@ -1,6 +1,5 @@
-This is a project that I am learning ReactJS.
-This will be my own home page that will have:
-
+I am creating a test project to learn ReactJS.
+This will be my own home page that will have the following:
 
 Offer more detailed explanation of my blog topics. Blog URL is located ericbanks31.blogspot.com
 Link to my github URL
