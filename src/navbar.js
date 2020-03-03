@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Collapse,
   Navbar,
@@ -10,7 +10,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem
+} from "reactstrap";
 
 export class NavigationBar extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ export class NavigationBar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
-  
+
   render() {
     return (
       <div>
@@ -41,27 +42,24 @@ export class NavigationBar extends React.Component {
               <NavItem>
                 <NavLink href="https://github.com/ebanks31">Github</NavLink>
               </NavItem>
-			  <NavItem>
+              <NavItem>
                 <NavLink href="http://ericbanks31.blogspot.com/">Blog</NavLink>
               </NavItem>
-			  <NavItem>
+              <NavItem>
                 <NavLink href="/about">About Me</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/products">About Me</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Options
                 </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
+                <DropdownMenu>
+                  <DropdownItem>Option 1</DropdownItem>
+                  <DropdownItem>Option 2</DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
+                  <DropdownItem>Reset</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
@@ -71,4 +69,3 @@ export class NavigationBar extends React.Component {
     );
   }
 }
-

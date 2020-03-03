@@ -1,10 +1,36 @@
-import React from 'react';
+'use strict';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {Helmet} from "react-helmet";
 import './index.css';
 import { Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavigationBar } from './navbar';
+
+const e = React.createElement;
+
+class LikeButton extends React.Component {
+   constructor(props) {
+     super(props);
+     this.state = { liked: false };
+   }
+ 
+   render() {
+     if (this.state.liked) {
+       return 'You liked this.';
+     }
+ 
+     return e(
+       'button',
+       { onClick: () => this.setState({ liked: true }) },
+       'Like'
+     );
+   }
+ }
+ 
+const domContainer = document.querySelector('#like_button_container');
+ReactDOM.render(e(LikeButton), domContainer);
 
 class App extends React.Component {
    render() {
@@ -60,6 +86,8 @@ class Application extends React.Component {
         <div className="application">
             <Helmet>
                 <style>{'body { background-color: blue; }'}</style>
+                <title>This is a test react application</title>
+                <meta name="description" content="ReactJS Helmet application" />
             </Helmet>
             ...
         </div>
